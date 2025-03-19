@@ -12,13 +12,15 @@ const db = mysql.createConnection(
      user:"root",
     host:"127.0.0.1",
     password:"",
-    database:"",
+    database:"atletikavb2017",
     }
 );
 
 app.get("/", (req, res) => {
     res.send("A szerver működik!");
 })
+
+
 
 app.listen(3000, () => {
     console.log("A szerver a 3000 porton fut!");
